@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<servicesDefinitions>
+    <servicesDefinition serviceName="Сервис администрирования системы">
+        <apiMethods>
+            <apiMethod methodName="RequestParametersProcessing" methodUrl="/BillingBranch/RequestParametersProcessing" methodAuthorization="token"/>
+        </apiMethods>
+        <port>11170</port>
+        <server>https://t2ru-crmbe-pp.corp.tele2.ru</server>
+    </servicesDefinition>
+    <servicesDefinition serviceName="Сервис причин и категорий">
+        <apiMethods>
+            <apiMethod methodName="CreateHandling" methodUrl="/handling/createhandling" methodAuthorization="token"/>
+            <apiMethod methodName="CreateInteraction" methodUrl="/handling/createinteraction" methodAuthorization="token"/>
+            <apiMethod methodName="isRepeatedHandling" methodUrl="/handling/isRepeatedHandling" methodAuthorization="token"/>
+            <apiMethod methodName="getinteractions" methodUrl="/handling/getinteractions" methodAuthorization="token"/>
+        </apiMethods>
+        <port>10752</port>
+        <server>https://t2ru-crmbe-pp.corp.tele2.ru</server>
+    </servicesDefinition>
+    <servicesDefinition serviceName="Новый сервис причин и категорий">
+        <apiMethods>
+            <apiMethod methodName="CreateHandling" methodUrl="/handling/createhandling" methodAuthorization="token"/>
+        </apiMethods>
+        <port>10750</port>
+        <server>https://t2ru-crmccbe-t1.corp.tele2.ru</server>
+    </servicesDefinition>
+    <servicesDefinition serviceName="Сервис идентификации">
+        <apiMethods>
+            <apiMethod methodName="Identifier" methodUrl="/identifier" methodAuthorization="token"/>
+        </apiMethods>
+        <port>6061</port>
+        <server>https://t2ru-crmbe-pp</server>
+    </servicesDefinition>
+    <servicesDefinition serviceName="Конструктор тарифов">
+        <apiMethods>
+            <apiMethod methodName="TariffInfo" methodUrl="/TariffConstructor/GetTariffInfo" methodAuthorization="token"/>
+            <apiMethod methodName="GetAvailableTariffs" methodUrl="/TariffConstructor/GetAvailableTariffs" methodAuthorization="token"/>
+            <apiMethod methodName="GetAvailableTariffDetails" methodUrl="/TariffConstructor/GetAvailableTariffDetails" methodAuthorization="token"/>
+            <apiMethod methodName="GetEnabledTariffDetails" methodUrl="/TariffConstructor/GetEnabledTariffDetails" methodAuthorization="token"/>
+        </apiMethods>
+        <port>11040</port>
+        <server>https://t2ru-crmbe-pp.corp.tele2.ru</server>
+    </servicesDefinition>
+    <servicesDefinition serviceName="Сервис финансов">
+        <apiMethods>
+            <apiMethod methodName="PaymentHistory" methodUrl="/finance/getPaymentHistory" methodAuthorization="token"/>
+            <apiMethod methodName="InvoiceHistory" methodUrl="/finance/getClientInvoice" methodAuthorization="token"/>
+            <apiMethod methodName="ChargeHistory" methodUrl="/finance/getChargeHistory" methodAuthorization="token"/>
+            <apiMethod methodName="GetPayCostSummary" methodUrl="/finance/GetPayCostSummary" methodAuthorization="token"/>
+        </apiMethods>
+        <port>11230</port>
+        <server>https://t2ru-crmbe-pp.corp.tele2.ru</server>
+    </servicesDefinition>
+    <servicesDefinition serviceName="Сервис персональной информации">
+        <apiMethods>
+            <apiMethod methodName="PersonalInfo" methodUrl="/personalInfo/getSubscriberInfo" methodAuthorization="token"/>
+        </apiMethods>
+        <port>11000</port>
+        <server>https://t2ru-crmbe-pp.corp.tele2.ru</server>
+    </servicesDefinition>
+    <servicesDefinition serviceName="Сервис Кредит доверия">
+        <apiMethods>
+            <apiMethod methodName="trustCreditGetInfo" methodUrl="/trustCredit/getInfo" methodAuthorization="token"/>
+        </apiMethods>
+        <port>11070</port>
+        <server>https://t2ru-crmbe-pp</server>
+    </servicesDefinition>
+</servicesDefinitions>
